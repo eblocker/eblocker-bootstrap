@@ -1,0 +1,9 @@
+Acquire::https::${aptHost}.eblocker.com {
+    Verify-Peer "true";
+    Verify-Host "true";
+
+    CaInfo "/etc/ssl/certs/${deviceRootFile}";
+
+    SslCert "/opt/eblocker-icap/keys/license.cert";
+    SslKey  "/opt/eblocker-icap/keys/license.key";
+};

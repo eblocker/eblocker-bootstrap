@@ -1,0 +1,2 @@
+deb https://${aptHost}.eblocker.com/eblocker ${aptDistribution} main
+deb https://${aptHost}.eblocker.com/eblocker-lists ${aptDistribution} main
