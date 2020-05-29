@@ -153,6 +153,17 @@
 			</properties>
 		</profile>
 		<profile>
+			<id>armbian-buster</id>
+			<properties>
+				<environment>prod</environment>
+				<aptHost>apt</aptHost>
+				<aptRepository>armbian</aptRepository>
+				<aptDistribution>buster</aptDistribution>
+				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
+				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
+			</properties>
+		</profile>
+		<profile>
 			<id>arm-stretch</id>
 			<properties>
 				<environment>prod</environment>
@@ -232,6 +243,17 @@
 			</properties>
 		</profile>
 		<profile>
+			<id>armbian-buster-stage</id>
+			<properties>
+				<environment>stage</environment>
+				<aptHost>apt.stage</aptHost>
+				<aptRepository>armbian</aptRepository>
+				<aptDistribution>buster</aptDistribution>
+				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
+				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
+			</properties>
+		</profile>
+		<profile>
 			<id>arm-stretch-stage</id>
 			<properties>
 				<environment>prod</environment>
@@ -306,6 +328,17 @@
 				<aptHost>apt.hh</aptHost>
 				<aptRepository>armbian</aptRepository>
 				<aptDistribution>jessie</aptDistribution>
+				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
+				<deviceRootFile>infrastructure-ca.crt</deviceRootFile>
+			</properties>
+		</profile>
+		<profile>
+			<id>armbian-buster-dev</id>
+			<properties>
+				<environment>dev</environment>
+				<aptHost>apt.hh</aptHost>
+				<aptRepository>armbian</aptRepository>
+				<aptDistribution>buster</aptDistribution>
 				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
 				<deviceRootFile>infrastructure-ca.crt</deviceRootFile>
 			</properties>
