@@ -95,7 +95,7 @@
 	<profiles>
 		<!-- Production profiles: -->
 		<profile>
-			<id>raspbian</id>
+			<id>raspbian-jessie</id>
 			<properties>
 				<environment>prod</environment>
 				<aptHost>apt</aptHost>
@@ -106,7 +106,7 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>raspbian-pi3-bplus</id>
+			<id>raspbian-stretch</id>
 			<properties>
 				<environment>prod</environment>
 				<aptHost>apt</aptHost>
@@ -117,7 +117,7 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>raspbian-pi4</id>
+			<id>raspbian-buster</id>
 			<properties>
 				<environment>prod</environment>
 				<aptHost>apt</aptHost>
@@ -128,21 +128,7 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>raspbian-m2</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<environment>prod</environment>
-				<aptHost>apt</aptHost>
-				<aptRepository>raspbian-m2</aptRepository>
-				<aptDistribution>wheezy</aptDistribution>
-				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>armbian</id>
+			<id>armbian-jessie</id>
 			<properties>
 				<environment>prod</environment>
 				<aptHost>apt</aptHost>
@@ -163,32 +149,10 @@
 				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
 			</properties>
 		</profile>
-		<profile>
-			<id>arm-stretch</id>
-			<properties>
-				<environment>prod</environment>
-				<aptHost>apt</aptHost>
-				<aptRepository>arm</aptRepository>
-				<aptDistribution>stretch</aptDistribution>
-				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>amd64</id>
-			<properties>
-				<environment>prod</environment>
-				<aptHost>apt</aptHost>
-				<aptRepository>amd64</aptRepository>
-				<aptDistribution>stretch</aptDistribution>
-				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
 		
 		<!-- Stage profiles: -->
 		<profile>
-			<id>raspbian-stage</id>
+			<id>raspbian-jessie-stage</id>
 			<properties>
 				<environment>stage</environment>
 				<aptHost>apt.stage</aptHost>
@@ -199,18 +163,7 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>raspbian-m2-stage</id>
-			<properties>
-				<environment>stage</environment>
-				<aptHost>apt.stage</aptHost>
-				<aptRepository>raspbian-m2</aptRepository>
-				<aptDistribution>wheezy</aptDistribution>
-				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>raspbian-pi3-bplus-stage</id>
+			<id>raspbian-stretch-stage</id>
 			<properties>
 				<environment>stage</environment>
 				<aptHost>apt.stage</aptHost>
@@ -221,7 +174,7 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>raspbian-pi4-stage</id>
+			<id>raspbian-buster-stage</id>
 			<properties>
 				<environment>stage</environment>
 				<aptHost>apt.stage</aptHost>
@@ -232,7 +185,7 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>armbian-stage</id>
+			<id>armbian-jessie-stage</id>
 			<properties>
 				<environment>stage</environment>
 				<aptHost>apt.stage</aptHost>
@@ -253,32 +206,10 @@
 				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
 			</properties>
 		</profile>
-		<profile>
-			<id>arm-stretch-stage</id>
-			<properties>
-				<environment>prod</environment>
-				<aptHost>apt.stage</aptHost>
-				<aptRepository>arm</aptRepository>
-				<aptDistribution>stretch</aptDistribution>
-				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>amd64-stage</id>
-			<properties>
-				<environment>stage</environment>
-				<aptHost>apt.stage</aptHost>
-				<aptRepository>amd64</aptRepository>
-				<aptDistribution>stretch</aptDistribution>
-				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
 
 		<!-- Development profiles: -->
 		<profile>
-			<id>raspbian-dev</id>
+			<id>raspbian-jessie-dev</id>
 			<properties>
 				<environment>dev</environment>
 				<aptHost>apt.hh</aptHost>
@@ -289,7 +220,7 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>raspbian-pi3-bplus-dev</id>
+			<id>raspbian-stretch-dev</id>
 			<properties>
 				<environment>dev</environment>
 				<aptHost>apt.hh</aptHost>
@@ -300,7 +231,7 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>raspbian-pi4-dev</id>
+			<id>raspbian-buster-dev</id>
 			<properties>
 				<environment>dev</environment>
 				<aptHost>apt.hh</aptHost>
@@ -311,18 +242,7 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>raspbian-m2-dev</id>
-			<properties>
-				<environment>dev</environment>
-				<aptHost>apt.hh</aptHost>
-				<aptRepository>raspbian-m2</aptRepository>
-				<aptDistribution>wheezy</aptDistribution>
-				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
-				<deviceRootFile>infrastructure-ca.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>armbian-dev</id>
+			<id>armbian-jessie-dev</id>
 			<properties>
 				<environment>dev</environment>
 				<aptHost>apt.hh</aptHost>
@@ -339,28 +259,6 @@
 				<aptHost>apt.hh</aptHost>
 				<aptRepository>armbian</aptRepository>
 				<aptDistribution>buster</aptDistribution>
-				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
-				<deviceRootFile>infrastructure-ca.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>arm-stretch-dev</id>
-			<properties>
-				<environment>dev</environment>
-				<aptHost>apt.hh</aptHost>
-				<aptRepository>arm</aptRepository>
-				<aptDistribution>stretch</aptDistribution>
-				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
-				<deviceRootFile>infrastructure-ca.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>amd64-dev</id>
-			<properties>
-				<environment>dev</environment>
-				<aptHost>apt.hh</aptHost>
-				<aptRepository>amd64</aptRepository>
-				<aptDistribution>stretch</aptDistribution>
 				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
 				<deviceRootFile>infrastructure-ca.crt</deviceRootFile>
 			</properties>
