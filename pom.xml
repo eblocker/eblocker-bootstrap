@@ -207,60 +207,27 @@
 			</properties>
 		</profile>
 
-		<!-- Development profiles: -->
+		<!-- Test profiles: -->
 		<profile>
-			<id>raspbian-jessie-dev</id>
+			<id>raspbian-buster-test</id>
 			<properties>
-				<environment>dev</environment>
-				<aptHost>apt.hh</aptHost>
-				<aptRepository>raspbian</aptRepository>
-				<aptDistribution>jessie</aptDistribution>
-				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
-				<deviceRootFile>infrastructure-ca.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>raspbian-stretch-dev</id>
-			<properties>
-				<environment>dev</environment>
-				<aptHost>apt.hh</aptHost>
-				<aptRepository>raspbian</aptRepository>
-				<aptDistribution>stretch</aptDistribution>
-				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
-				<deviceRootFile>infrastructure-ca.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>raspbian-buster-dev</id>
-			<properties>
-				<environment>dev</environment>
-				<aptHost>apt.hh</aptHost>
+				<environment>test</environment>
+				<aptHost>apt.test</aptHost>
 				<aptRepository>raspbian</aptRepository>
 				<aptDistribution>buster</aptDistribution>
 				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
-				<deviceRootFile>infrastructure-ca.crt</deviceRootFile>
+				<deviceRootFile>eblocker-test-device-root.crt</deviceRootFile>
 			</properties>
 		</profile>
 		<profile>
-			<id>armbian-jessie-dev</id>
+			<id>armbian-buster-test</id>
 			<properties>
-				<environment>dev</environment>
-				<aptHost>apt.hh</aptHost>
-				<aptRepository>armbian</aptRepository>
-				<aptDistribution>jessie</aptDistribution>
-				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
-				<deviceRootFile>infrastructure-ca.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>armbian-buster-dev</id>
-			<properties>
-				<environment>dev</environment>
-				<aptHost>apt.hh</aptHost>
+				<environment>test</environment>
+				<aptHost>apt.test</aptHost>
 				<aptRepository>armbian</aptRepository>
 				<aptDistribution>buster</aptDistribution>
 				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
-				<deviceRootFile>infrastructure-ca.crt</deviceRootFile>
+				<deviceRootFile>eblocker-test-device-root.crt</deviceRootFile>
 			</properties>
 		</profile>
 	</profiles>
