@@ -230,5 +230,16 @@
 				<deviceRootFile>eblocker-test-device-root.crt</deviceRootFile>
 			</properties>
 		</profile>
+		<profile>
+			<id>amd64-buster-test</id>
+			<properties>
+				<environment>test</environment>
+				<aptHost>apt.test</aptHost>
+				<aptRepository>amd64</aptRepository>
+				<aptDistribution>buster</aptDistribution>
+				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
+				<deviceRootFile>eblocker-test-device-root.crt</deviceRootFile>
+			</properties>
+		</profile>
 	</profiles>
 </project>
