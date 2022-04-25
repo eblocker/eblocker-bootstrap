@@ -149,6 +149,17 @@
 				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
 			</properties>
 		</profile>
+		<profile>
+			<id>amd64-buster</id>
+			<properties>
+				<environment>prod</environment>
+				<aptHost>apt</aptHost>
+				<aptRepository>amd64</aptRepository>
+				<aptDistribution>buster</aptDistribution>
+				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
+				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
+			</properties>
+		</profile>
 		
 		<!-- Stage profiles: -->
 		<profile>
@@ -201,6 +212,17 @@
 				<environment>stage</environment>
 				<aptHost>apt.stage</aptHost>
 				<aptRepository>armbian</aptRepository>
+				<aptDistribution>buster</aptDistribution>
+				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
+				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
+			</properties>
+		</profile>
+		<profile>
+			<id>amd64-buster-stage</id>
+			<properties>
+				<environment>stage</environment>
+				<aptHost>apt.stage</aptHost>
+				<aptRepository>amd64</aptRepository>
 				<aptDistribution>buster</aptDistribution>
 				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
 				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
