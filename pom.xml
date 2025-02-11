@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.eblocker</groupId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<artifactId>eblocker-bootstrap</artifactId>
 	<name>eBlocker - Boostrapping for production</name>
 	<description>Establish a connection to the eBlocker production repository</description>
@@ -95,45 +95,12 @@
 	<profiles>
 		<!-- Production profiles: -->
 		<profile>
-			<id>raspbian-jessie</id>
-			<properties>
-				<environment>prod</environment>
-				<aptHost>apt</aptHost>
-				<aptRepository>raspbian</aptRepository>
-				<aptDistribution>jessie</aptDistribution>
-				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>raspbian-stretch</id>
-			<properties>
-				<environment>prod</environment>
-				<aptHost>apt</aptHost>
-				<aptRepository>raspbian</aptRepository>
-				<aptDistribution>stretch</aptDistribution>
-				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
 			<id>raspbian-buster</id>
 			<properties>
 				<environment>prod</environment>
 				<aptHost>apt</aptHost>
 				<aptRepository>raspbian</aptRepository>
 				<aptDistribution>buster</aptDistribution>
-				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>armbian-jessie</id>
-			<properties>
-				<environment>prod</environment>
-				<aptHost>apt</aptHost>
-				<aptRepository>armbian</aptRepository>
-				<aptDistribution>jessie</aptDistribution>
 				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
 				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
 			</properties>
@@ -160,30 +127,30 @@
 				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
 			</properties>
 		</profile>
-		
+		<profile>
+			<id>raspios-bookworm</id>
+			<properties>
+				<environment>prod</environment>
+				<aptHost>apt</aptHost>
+				<aptRepository>raspios</aptRepository>
+				<aptDistribution>bookworm</aptDistribution>
+				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
+				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
+			</properties>
+		</profile>
+		<profile>
+			<id>amd64-bookworm</id>
+			<properties>
+				<environment>prod</environment>
+				<aptHost>apt</aptHost>
+				<aptRepository>amd64</aptRepository>
+				<aptDistribution>bookworm</aptDistribution>
+				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
+				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
+			</properties>
+		</profile>
+
 		<!-- Stage profiles: -->
-		<profile>
-			<id>raspbian-jessie-stage</id>
-			<properties>
-				<environment>stage</environment>
-				<aptHost>apt.stage</aptHost>
-				<aptRepository>raspbian</aptRepository>
-				<aptDistribution>jessie</aptDistribution>
-				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>raspbian-stretch-stage</id>
-			<properties>
-				<environment>stage</environment>
-				<aptHost>apt.stage</aptHost>
-				<aptRepository>raspbian</aptRepository>
-				<aptDistribution>stretch</aptDistribution>
-				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
 		<profile>
 			<id>raspbian-buster-stage</id>
 			<properties>
@@ -191,17 +158,6 @@
 				<aptHost>apt.stage</aptHost>
 				<aptRepository>raspbian</aptRepository>
 				<aptDistribution>buster</aptDistribution>
-				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>armbian-jessie-stage</id>
-			<properties>
-				<environment>stage</environment>
-				<aptHost>apt.stage</aptHost>
-				<aptRepository>armbian</aptRepository>
-				<aptDistribution>jessie</aptDistribution>
 				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
 				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
 			</properties>
@@ -224,6 +180,28 @@
 				<aptHost>apt.stage</aptHost>
 				<aptRepository>amd64</aptRepository>
 				<aptDistribution>buster</aptDistribution>
+				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
+				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
+			</properties>
+		</profile>
+		<profile>
+			<id>raspios-bookworm-stage</id>
+			<properties>
+				<environment>stage</environment>
+				<aptHost>apt.stage</aptHost>
+				<aptRepository>raspios</aptRepository>
+				<aptDistribution>bookworm</aptDistribution>
+				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
+				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
+			</properties>
+		</profile>
+		<profile>
+			<id>amd64-bookworm-stage</id>
+			<properties>
+				<environment>stage</environment>
+				<aptHost>apt.stage</aptHost>
+				<aptRepository>amd64</aptRepository>
+				<aptDistribution>bookworm</aptDistribution>
 				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
 				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
 			</properties>
@@ -259,6 +237,28 @@
 				<aptHost>apt.test</aptHost>
 				<aptRepository>amd64</aptRepository>
 				<aptDistribution>buster</aptDistribution>
+				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
+				<deviceRootFile>eblocker-test-device-root.crt</deviceRootFile>
+			</properties>
+		</profile>
+		<profile>
+			<id>raspios-bookworm-test</id>
+			<properties>
+				<environment>test</environment>
+				<aptHost>apt.test</aptHost>
+				<aptRepository>raspios</aptRepository>
+				<aptDistribution>bookworm</aptDistribution>
+				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
+				<deviceRootFile>eblocker-test-device-root.crt</deviceRootFile>
+			</properties>
+		</profile>
+		<profile>
+			<id>amd64-bookworm-test</id>
+			<properties>
+				<environment>test</environment>
+				<aptHost>apt.test</aptHost>
+				<aptRepository>amd64</aptRepository>
+				<aptDistribution>bookworm</aptDistribution>
 				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
 				<deviceRootFile>eblocker-test-device-root.crt</deviceRootFile>
 			</properties>

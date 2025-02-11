@@ -1,3 +1,4 @@
+
 # eblocker-bootstrap
 
 This package prepares a Debian system for the eBlocker software:
@@ -11,13 +12,15 @@ This package prepares a Debian system for the eBlocker software:
 
 Select an architecture:
 
-* `armbian` for Banana Pi M2+ boards
-* `raspbian` for Raspberry Pi boards
+* `armbian` for Banana Pi M2+ boards (Buster only)
+* `raspbian` for Raspberry Pi boards (Buster only)
+* `raspbios` for 64bit Raspberry Pi boards
 * `amd64` for AMD and Intel systems
 
 Select a release:
 
 * `buster`
+* `bookworm`
 
 Optionally append an environment:
 
@@ -26,13 +29,12 @@ Optionally append an environment:
 
 The combination of the above is a profile ID, for example:
 
-* `armbian-buster`
-* `raspbian-buster-stage`
-* `amd64-buster-test`
+* `raspbios-bookworm`
+* `amd64-bookworm-test`
 
 Build the package with maven, setting the profile ID with option `-P`,
 for example:
 
-    mvn -Pamd64-buster clean package
+    mvn -Praspios-bookworm clean package
 
 The Debian package can be found in the `target` directory.
