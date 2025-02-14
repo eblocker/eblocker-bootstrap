@@ -1,4 +1,4 @@
-Acquire::https::${aptHost}.eblocker.com {
+Acquire::https::${aptHost} {
     Verify-Peer "true";
     Verify-Host "true";
 

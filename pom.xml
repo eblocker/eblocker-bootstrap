@@ -98,7 +98,7 @@
 			<id>raspbian-buster</id>
 			<properties>
 				<environment>prod</environment>
-				<aptHost>apt</aptHost>
+				<aptHost>apt.eblocker.com</aptHost>
 				<aptRepository>raspbian</aptRepository>
 				<aptDistribution>buster</aptDistribution>
 				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
@@ -109,7 +109,7 @@
 			<id>armbian-buster</id>
 			<properties>
 				<environment>prod</environment>
-				<aptHost>apt</aptHost>
+				<aptHost>apt.eblocker.com</aptHost>
 				<aptRepository>armbian</aptRepository>
 				<aptDistribution>buster</aptDistribution>
 				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
@@ -120,7 +120,7 @@
 			<id>amd64-buster</id>
 			<properties>
 				<environment>prod</environment>
-				<aptHost>apt</aptHost>
+				<aptHost>apt.eblocker.com</aptHost>
 				<aptRepository>amd64</aptRepository>
 				<aptDistribution>buster</aptDistribution>
 				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
@@ -131,7 +131,7 @@
 			<id>raspios-bookworm</id>
 			<properties>
 				<environment>prod</environment>
-				<aptHost>apt</aptHost>
+				<aptHost>apt.eblocker.org</aptHost>
 				<aptRepository>raspios</aptRepository>
 				<aptDistribution>bookworm</aptDistribution>
 				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
@@ -142,7 +142,7 @@
 			<id>amd64-bookworm</id>
 			<properties>
 				<environment>prod</environment>
-				<aptHost>apt</aptHost>
+				<aptHost>apt.eblocker.org</aptHost>
 				<aptRepository>amd64</aptRepository>
 				<aptDistribution>bookworm</aptDistribution>
 				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
@@ -155,7 +155,7 @@
 			<id>raspbian-buster-stage</id>
 			<properties>
 				<environment>stage</environment>
-				<aptHost>apt.stage</aptHost>
+				<aptHost>apt.stage.eblocker.com</aptHost>
 				<aptRepository>raspbian</aptRepository>
 				<aptDistribution>buster</aptDistribution>
 				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
@@ -166,7 +166,7 @@
 			<id>armbian-buster-stage</id>
 			<properties>
 				<environment>stage</environment>
-				<aptHost>apt.stage</aptHost>
+				<aptHost>apt.stage.eblocker.com</aptHost>
 				<aptRepository>armbian</aptRepository>
 				<aptDistribution>buster</aptDistribution>
 				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
@@ -177,7 +177,7 @@
 			<id>amd64-buster-stage</id>
 			<properties>
 				<environment>stage</environment>
-				<aptHost>apt.stage</aptHost>
+				<aptHost>apt.stage.eblocker.com</aptHost>
 				<aptRepository>amd64</aptRepository>
 				<aptDistribution>buster</aptDistribution>
 				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
@@ -188,7 +188,7 @@
 			<id>raspios-bookworm-stage</id>
 			<properties>
 				<environment>stage</environment>
-				<aptHost>apt.stage</aptHost>
+				<aptHost>apt.stage.eblocker.org</aptHost>
 				<aptRepository>raspios</aptRepository>
 				<aptDistribution>bookworm</aptDistribution>
 				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
@@ -199,7 +199,7 @@
 			<id>amd64-bookworm-stage</id>
 			<properties>
 				<environment>stage</environment>
-				<aptHost>apt.stage</aptHost>
+				<aptHost>apt.stage.eblocker.org</aptHost>
 				<aptRepository>amd64</aptRepository>
 				<aptDistribution>bookworm</aptDistribution>
 				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
@@ -212,7 +212,7 @@
 			<id>raspbian-buster-test</id>
 			<properties>
 				<environment>test</environment>
-				<aptHost>apt.test</aptHost>
+				<aptHost>apt.test.eblocker.com</aptHost>
 				<aptRepository>raspbian</aptRepository>
 				<aptDistribution>buster</aptDistribution>
 				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
@@ -223,7 +223,7 @@
 			<id>armbian-buster-test</id>
 			<properties>
 				<environment>test</environment>
-				<aptHost>apt.test</aptHost>
+				<aptHost>apt.test.eblocker.com</aptHost>
 				<aptRepository>armbian</aptRepository>
 				<aptDistribution>buster</aptDistribution>
 				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
@@ -234,7 +234,7 @@
 			<id>amd64-buster-test</id>
 			<properties>
 				<environment>test</environment>
-				<aptHost>apt.test</aptHost>
+				<aptHost>apt.test.eblocker.com</aptHost>
 				<aptRepository>amd64</aptRepository>
 				<aptDistribution>buster</aptDistribution>
 				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
@@ -245,7 +245,7 @@
 			<id>raspios-bookworm-test</id>
 			<properties>
 				<environment>test</environment>
-				<aptHost>apt.test</aptHost>
+				<aptHost>apt.test.eblocker.org</aptHost>
 				<aptRepository>raspios</aptRepository>
 				<aptDistribution>bookworm</aptDistribution>
 				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
@@ -256,7 +256,7 @@
 			<id>amd64-bookworm-test</id>
 			<properties>
 				<environment>test</environment>
-				<aptHost>apt.test</aptHost>
+				<aptHost>apt.test.eblocker.org</aptHost>
 				<aptRepository>amd64</aptRepository>
 				<aptDistribution>bookworm</aptDistribution>
 				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
