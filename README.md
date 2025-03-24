@@ -14,7 +14,7 @@ Select an architecture:
 
 * `armbian` for Banana Pi M2+ boards (Buster only)
 * `raspbian` for Raspberry Pi boards (Buster only)
-* `raspbios` for 64bit Raspberry Pi boards
+* `raspios` for 64bit Raspberry Pi boards
 * `amd64` for AMD and Intel systems
 
 Select a release:
@@ -29,7 +29,7 @@ Optionally append an environment:
 
 The combination of the above is a profile ID, for example:
 
-* `raspbios-bookworm`
+* `raspios-bookworm`
 * `amd64-bookworm-test`
 
 Build the package with maven, setting the profile ID with option `-P`,
