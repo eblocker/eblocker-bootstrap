@@ -95,39 +95,6 @@
 	<profiles>
 		<!-- Production profiles: -->
 		<profile>
-			<id>raspbian-buster</id>
-			<properties>
-				<environment>prod</environment>
-				<aptHost>apt.eblocker.com</aptHost>
-				<aptRepository>raspbian</aptRepository>
-				<aptDistribution>buster</aptDistribution>
-				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>armbian-buster</id>
-			<properties>
-				<environment>prod</environment>
-				<aptHost>apt.eblocker.com</aptHost>
-				<aptRepository>armbian</aptRepository>
-				<aptDistribution>buster</aptDistribution>
-				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>amd64-buster</id>
-			<properties>
-				<environment>prod</environment>
-				<aptHost>apt.eblocker.com</aptHost>
-				<aptRepository>amd64</aptRepository>
-				<aptDistribution>buster</aptDistribution>
-				<aptSigningKeyFile>eblocker.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
 			<id>raspios-bookworm</id>
 			<properties>
 				<environment>prod</environment>
@@ -152,39 +119,6 @@
 
 		<!-- Stage profiles: -->
 		<profile>
-			<id>raspbian-buster-stage</id>
-			<properties>
-				<environment>stage</environment>
-				<aptHost>apt.stage.eblocker.com</aptHost>
-				<aptRepository>raspbian</aptRepository>
-				<aptDistribution>buster</aptDistribution>
-				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>armbian-buster-stage</id>
-			<properties>
-				<environment>stage</environment>
-				<aptHost>apt.stage.eblocker.com</aptHost>
-				<aptRepository>armbian</aptRepository>
-				<aptDistribution>buster</aptDistribution>
-				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>amd64-buster-stage</id>
-			<properties>
-				<environment>stage</environment>
-				<aptHost>apt.stage.eblocker.com</aptHost>
-				<aptRepository>amd64</aptRepository>
-				<aptDistribution>buster</aptDistribution>
-				<aptSigningKeyFile>eblocker-stage.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-stage-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
 			<id>raspios-bookworm-stage</id>
 			<properties>
 				<environment>stage</environment>
@@ -208,39 +142,6 @@
 		</profile>
 
 		<!-- Test profiles: -->
-		<profile>
-			<id>raspbian-buster-test</id>
-			<properties>
-				<environment>test</environment>
-				<aptHost>apt.test.eblocker.com</aptHost>
-				<aptRepository>raspbian</aptRepository>
-				<aptDistribution>buster</aptDistribution>
-				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-test-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>armbian-buster-test</id>
-			<properties>
-				<environment>test</environment>
-				<aptHost>apt.test.eblocker.com</aptHost>
-				<aptRepository>armbian</aptRepository>
-				<aptDistribution>buster</aptDistribution>
-				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-test-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
-		<profile>
-			<id>amd64-buster-test</id>
-			<properties>
-				<environment>test</environment>
-				<aptHost>apt.test.eblocker.com</aptHost>
-				<aptRepository>amd64</aptRepository>
-				<aptDistribution>buster</aptDistribution>
-				<aptSigningKeyFile>eblocker-dev.gpg</aptSigningKeyFile>
-				<deviceRootFile>eblocker-test-device-root.crt</deviceRootFile>
-			</properties>
-		</profile>
 		<profile>
 			<id>raspios-bookworm-test</id>
 			<properties>

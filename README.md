@@ -12,14 +12,11 @@ This package prepares a Debian system for the eBlocker software:
 
 Select an architecture:
 
-* `armbian` for Banana Pi M2+ boards (Buster only)
-* `raspbian` for Raspberry Pi boards (Buster only)
 * `raspios` for 64bit Raspberry Pi boards
 * `amd64` for AMD and Intel systems
 
 Select a release:
 
-* `buster`
 * `bookworm`
 
 Optionally append an environment:
