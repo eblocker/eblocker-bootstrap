@@ -63,7 +63,7 @@
 							<goal>jdeb</goal>
 						</goals>
 						<configuration>
-							<deb>${debTargetDir}/${artifactId}_${aptRepository}_${project.version}.${maven.build.timestamp}-${aptDistribution}_all.deb</deb>
+							<deb>${debTargetDir}/${project.artifactId}_${aptRepository}_${project.version}-${environment}-${aptDistribution}_all.deb</deb>
 							<dataSet>
 								<data>
 									<src>${project.build.directory}/package/etc</src>
